@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Islamophobia in France: Secularism, Security, and Belonging</title>
+  <style>
+    /* =============================================================
+       EASY EDIT GUIDE
+       - Change colors in :root
+       - Replace image URLs inside <img src="...">
+       - Edit source citations in the Works Cited section at the bottom
+       - Upload this file to GitHub as index.html
+       ============================================================= */
+    :root{
+      --bg:#071016; --panel:#0f1b24; --panel2:#122330; --text:#edf6f9;
+      --muted:#b9c7cf; --accent:#86d7c4; --accent2:#f0c36a; --line:#24414f;
+      --danger:#ff8a8a; --good:#9be78f; --shadow:0 18px 60px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at top left,#143343 0,#071016 42%,#05080b 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.65}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+    nav{position:sticky;top:0;z-index:10;background:rgba(7,16,22,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav .wrap{display:flex;gap:18px;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+    .brand{font-weight:800;letter-spacing:.3px}.navlinks{display:flex;flex-wrap:wrap;gap:12px;font-size:.92rem}.navlinks a{color:var(--muted)}
+    header{padding:92px 0 72px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+    header:before{content:"";position:absolute;inset:-40px;background:linear-gradient(115deg,rgba(134,215,196,.16),transparent 38%,rgba(240,195,106,.12));pointer-events:none}
+    .hero{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:center}
+    .tag{display:inline-flex;border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:999px;padding:7px 12px;color:var(--accent2);font-size:.85rem;font-weight:700}
+    h1{font-size:clamp(2.4rem,5vw,5rem);line-height:1.02;margin:20px 0 18px;letter-spacing:-.06em}
+    h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.15;margin:0 0 18px;letter-spacing:-.04em}
+    h3{margin:0 0 10px;font-size:1.25rem} p{color:var(--muted);margin:0 0 16px}.lead{font-size:1.18rem;color:#d7e5ea;max-width:780px}
+    .hero-card{background:linear-gradient(180deg,rgba(18,35,48,.92),rgba(15,27,36,.92));border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);overflow:hidden}
+    figure{margin:0}.hero-card img,.image-card img{display:block;width:100%;height:100%;object-fit:cover}.hero-card img{height:360px}.caption{font-size:.78rem;color:#9caeb8;padding:12px 14px;border-top:1px solid var(--line);background:rgba(0,0,0,.18)}
+    section{padding:64px 0;border-bottom:1px solid rgba(36,65,79,.7)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.two{grid-template-columns:repeat(2,1fr)}
+    .card{background:linear-gradient(180deg,rgba(18,35,48,.88),rgba(12,24,32,.88));border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 10px 35px rgba(0,0,0,.18)}
+    .stat{font-size:2rem;font-weight:850;color:var(--accent2);line-height:1}.stat-label{color:var(--muted);font-size:.9rem;margin-top:8px}
+    .thesis{border-left:4px solid var(--accent);padding:20px 24px;background:rgba(134,215,196,.08);border-radius:18px;color:#e8fbf6;font-size:1.1rem}
+    .image-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}.image-card{overflow:hidden;border-radius:24px;border:1px solid var(--line);background:var(--panel);box-shadow:0 12px 36px rgba(0,0,0,.22)}.image-card img{height:235px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}.kicker{color:var(--accent2);font-weight:800;text-transform:uppercase;font-size:.78rem;letter-spacing:.16em;margin-bottom:8px}
+    .pill{display:inline-block;margin:5px 6px 5px 0;padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:#cfe3ea;background:rgba(255,255,255,.04);font-size:.84rem}
+    .timeline{display:grid;gap:14px}.event{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.035)}.year{color:var(--accent2);font-weight:900}
+    blockquote{margin:20px 0;padding:20px 24px;border-left:4px solid var(--accent2);background:rgba(240,195,106,.08);border-radius:18px;color:#f5e9cd}
+    .works li{margin:0 0 12px;color:var(--muted)}
+    footer{padding:34px 0;color:#91a4ae;text-align:center}
+    @media(max-width:850px){.hero,.grid,.two,.image-grid{grid-template-columns:1fr}.navlinks{display:none}.event{grid-template-columns:1fr}.hero-card img{height:260px}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <div class="brand">Islamophobia in France</div>
+      <div class="navlinks">
+        <a href="#profile">Profile</a><a href="#law">Law</a><a href="#politics">Politics</a><a href="#media">Media</a><a href="#economy">Economy</a><a href="#security">Security</a><a href="#resistance">Resistance</a><a href="#works">Works Cited</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="wrap hero">
+      <div>
+        <span class="tag">Research Website • France Case Study</span>
+        <h1>Secularism, Security, and the Muslim Question in France</h1>
+        <p class="lead">This project argues that Islamophobia in France does not operate only as individual prejudice. It is structured through the language of republican secularism, public order, national security, and cultural assimilation, turning Muslim visibility into a recurring test of whether Muslims can fully belong.</p>
+        <p><strong>Team members:</strong> [Add names here]</p>
+      </div>
+      <figure class="hero-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Grande_Mosquee_de_Paris.jpg/1024px-Grande_Mosquee_de_Paris.jpg" alt="Grand Mosque of Paris exterior">
+        <figcaption class="caption">Grand Mosque of Paris. Replace this image URL if your instructor wants only locally uploaded media. Image: Wikimedia Commons.</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <section id="framing">
+      <div class="wrap">
+        <div class="kicker">Central argument</div>
+        <h2>Islamophobia as a system of conditional citizenship</h2>
+        <p class="thesis">In the French case, Islamophobia works by defining Muslims as citizens whose belonging is conditional: they may be included as individuals, but visible Muslim practices are repeatedly framed as threats to secularism, women’s rights, national cohesion, or public security. This creates a contradiction at the heart of the republic: universal equality is claimed in principle, while Muslim difference is treated as a problem to be regulated.</p>
+        <div class="image-grid">
+          <figure class="image-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Assembl%C3%A9e_nationale%2C_Paris_2010.jpg/1024px-Assembl%C3%A9e_nationale%2C_Paris_2010.jpg" alt="French National Assembly"><figcaption class="caption">The National Assembly, where debates over secularism, public order, and religious visibility become law. Image: Wikimedia Commons.</figcaption></figure>
+          <figure class="image-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Grand_Mosque_of_Paris_courtyard.jpg/1024px-Grand_Mosque_of_Paris_courtyard.jpg" alt="Courtyard of the Grand Mosque of Paris"><figcaption class="caption">The Grand Mosque of Paris reflects the long historical presence of Muslims in France. Image: Wikimedia Commons.</figcaption></figure>
+          <figure class="image-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Paris_-_Police_nationale.jpg/1024px-Paris_-_Police_nationale.jpg" alt="French police in Paris"><figcaption class="caption">Security policy has become one of the main arenas where Muslim communities are monitored and politicized. Image: Wikimedia Commons.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">Country profile</div><h2>Historical and demographic grounding</h2></div></div>
+        <div class="grid">
+          <div class="card"><div class="stat">10%</div><div class="stat-label">Approximate share of metropolitan France’s population ages 18–59 identifying as Muslim in 2019–2020, according to INSEE.</div></div>
+          <div class="card"><div class="stat">51%</div><div class="stat-label">Share of ages 18–59 in metropolitan France reporting no religion in the same INSEE religious diversity study.</div></div>
+          <div class="card"><div class="stat">1905</div><div class="stat-label">France’s landmark law separating churches and the state, foundational to the principle of <em>laïcité</em>.</div></div>
+        </div>
+        <div class="grid two" style="margin-top:18px">
+          <div class="card"><h3>Brief history</h3><p>France’s relationship with Islam is inseparable from empire. French colonial rule in Algeria, Tunisia, Morocco, West Africa, and the Levant made Muslims subjects of French power long before many became citizens or residents inside metropolitan France. Postwar labor migration, family reunification, and the descendants of immigrants transformed Islam into France’s second-largest religion.</p></div>
+          <div class="card"><h3>Religious diversity</h3><p>France is officially secular and does not organize citizenship through religious categories. Yet public debates often focus intensely on Islam, especially Muslim dress, mosques, halal markets, Islamic schools, migration, and “separatism.” This means Muslims are both officially invisible as a religious minority and highly visible as a political problem.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="law">
+      <div class="wrap">
+        <div class="kicker">Legal restrictions</div><h2>When neutrality becomes regulation of Muslim visibility</h2>
+        <div class="timeline">
+          <div class="event"><div class="year">2004</div><div><strong>Public school religious symbols ban.</strong><p>The law banning conspicuous religious symbols in public schools applied to multiple religions, but its political target was widely understood to include Muslim girls wearing headscarves.</p></div></div>
+          <div class="event"><div class="year">2010</div><div><strong>Full-face veil ban.</strong><p>France banned face coverings in public space, affecting Muslim women wearing niqab and burqa. The state framed the measure around public order, security, and republican values.</p></div></div>
+          <div class="event"><div class="year">2021</div><div><strong>“Separatism” law.</strong><p>The law strengthened oversight over religious associations, homeschooling, foreign funding, and organizations accused of undermining republican values. Critics argue that even where the text is formally neutral, the political context makes Muslims the main object of suspicion.</p></div></div>
+          <div class="event"><div class="year">2023</div><div><strong>Abaya and qamis school ban.</strong><p>France’s education minister banned abayas and qamis in public schools, and the Conseil d’État upheld the measure. Supporters framed it as secular neutrality; critics saw it as another expansion of state control over Muslim-coded clothing.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="politics">
+      <div class="wrap">
+        <div class="kicker">Electoral politics</div><h2>Political Islamophobia as campaign infrastructure</h2>
+        <div class="grid two">
+          <div class="card"><h3>Far-right normalization</h3><p>Figures such as Marine Le Pen and Éric Zemmour have repeatedly connected Islam, immigration, crime, and national decline. Their rhetoric pressures mainstream parties to adopt harsher language on secularism, borders, and “separatism.” Islamophobia therefore works not only through explicitly far-right discourse but also through agenda-setting: it moves the center of debate.</p></div>
+          <div class="card"><h3>Mainstream adoption</h3><p>Presidents and ministers often defend restrictive policy through republican universalism rather than openly anti-Muslim language. This makes French Islamophobia distinctive: it frequently appears as a defense of equality, women’s rights, or neutrality while disproportionately regulating Muslim practices.</p></div>
+        </div>
+        <blockquote>Analytical claim: the key political move is translation. Muslim practices are translated into problems of secularism, security, or integration, allowing discriminatory outcomes to be defended as universal republican policy.</blockquote>
+      </div>
+    </section>
+
+    <section id="media">
+      <div class="wrap">
+        <div class="kicker">Media, film, and images</div><h2>The Muslim body as a visual symbol of crisis</h2>
+        <div class="grid two">
+          <div class="card"><h3>Headscarf debates</h3><p>French media coverage often turns Muslim women’s clothing into evidence in larger debates about freedom, patriarchy, extremism, immigration, and national identity. This creates a narrow visual vocabulary where Muslim women are made to stand in for the “problem” of Islam in France.</p></div>
+          <div class="card"><h3>Security framing</h3><p>After terrorist attacks, media narratives often blur distinctions between violent groups, ordinary religious conservatism, immigration, and Muslim civil society. This does not mean all security concerns are invented; it means the burden of suspicion is distributed unevenly across Muslim communities.</p></div>
+        </div>
+        <div class="image-grid">
+          <figure class="image-card"><img src="https://api.time.com/wp-content/uploads/2021/05/france-hijab-ban.jpg" alt="Women protesting a hijab ban in France"><figcaption class="caption">Protest image used to analyze how Muslim women become central symbols in debates over French liberty and secularism. Image: TIME/Reuters source page.</figcaption></figure>
+          <figure class="image-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Charlie_Hebdo_-_Je_suis_Charlie_-_Place_de_la_Republique_-_Paris_-_2015-01-11.jpg/1024px-Charlie_Hebdo_-_Je_suis_Charlie_-_Place_de_la_Republique_-_Paris_-_2015-01-11.jpg" alt="Je suis Charlie demonstration"><figcaption class="caption">Post-attack public discourse often linked free speech, secularism, security, and Islam in ways that shaped later policy debates. Image: Wikimedia Commons.</figcaption></figure>
+          <figure class="image-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/France24_logo.svg/1024px-France24_logo.svg.png" alt="France 24 logo"><figcaption class="caption">Media outlets can inform, but repeated framing choices also shape which Muslim issues are treated as national crises. Image: Wikimedia Commons.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="economy">
+      <div class="wrap">
+        <div class="kicker">Economic restrictions</div><h2>Discrimination through work, banking, travel, and opportunity</h2>
+        <div class="grid">
+          <div class="card"><h3>Employment</h3><p>Muslims and people perceived as Muslim often face discrimination in hiring, especially when names, addresses, clothing, or racialized markers signal North African, African, Arab, Turkish, or Muslim background.</p></div>
+          <div class="card"><h3>Banking and business</h3><p>Islamophobia can appear indirectly through “risk” systems: account closures, extra scrutiny of charities, difficulty moving money internationally, or suspicion toward Muslim civic and religious organizations.</p></div>
+          <div class="card"><h3>Travel and borders</h3><p>Muslim citizens, immigrants, refugees, and travelers from Muslim-majority states may face intensified scrutiny through visa systems, watchlists, airport questioning, or administrative suspicion.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="security">
+      <div class="wrap">
+        <div class="kicker">Surveillance and emergency powers</div><h2>The security state and the expansion of suspicion</h2>
+        <div class="grid two">
+          <div class="card"><h3>Emergency logic</h3><p>Counterterrorism policies after major attacks normalized expanded surveillance, administrative closures, raids, and exceptional measures. Even when formally justified by security, these policies often created collective pressure on Muslim spaces such as mosques, schools, charities, and community associations.</p></div>
+          <div class="card"><h3>Associational pressure</h3><p>The dissolution of the Collective Against Islamophobia in France (CCIF) became a major example for critics who argue that anti-racist Muslim civil society itself can be treated as suspicious when it challenges state policy.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resistance">
+      <div class="wrap">
+        <div class="kicker">Counter-organizations and positive cases</div><h2>Muslim civil society, rights groups, and legal resistance</h2>
+        <div class="grid">
+          <div class="card"><h3>Rights organizations</h3><p>Amnesty International, Human Rights Watch, the Open Society Justice Initiative, and other organizations have documented concerns over religious freedom, association, and discriminatory impact.</p></div>
+          <div class="card"><h3>Community organizations</h3><p>Muslim organizations, student groups, mosque networks, and anti-racist collectives continue to document discrimination, challenge bans, support affected families, and provide legal advocacy.</p></div>
+          <div class="card"><h3>Positive examples</h3><p>French Muslims have shaped public life as scholars, athletes, artists, entrepreneurs, doctors, lawyers, teachers, and public servants. Their presence challenges the narrative that Islam is foreign to France.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conclusion">
+      <div class="wrap">
+        <div class="kicker">Conclusion</div><h2>What the French case reveals</h2>
+        <p class="thesis">France shows how Islamophobia can be embedded in liberal and republican language rather than only in openly racist speech. The country’s case is therefore especially important: it demonstrates how a state can promise universal equality while repeatedly making Muslim visibility into an object of law, media spectacle, electoral mobilization, and security management.</p>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="wrap">
+        <div class="kicker">Works cited</div><h2>Sources and media credits</h2>
+        <ol class="works">
+          <li>INSEE. “Religious Diversity in France: Intergenerational Transmissions and Practices by Origins,” 2019–2020 data.</li>
+          <li>Conseil d’État. Decisions concerning the 2023 abaya and qamis ban in French public schools.</li>
+          <li>Amnesty International. “France: Shutting down anti-racist organisation risks freedoms,” 2020.</li>
+          <li>Human Rights Watch. “French Court Confirms Dissolution of Anti-Discrimination Group,” 2021.</li>
+          <li>U.S. Department of State. International Religious Freedom Report: France.</li>
+          <li>European Commission against Racism and Intolerance and European/UN human rights materials on anti-Muslim discrimination.</li>
+          <li>Islamophobia Studies Journal and European Islamophobia Report materials on France and Western Europe.</li>
+          <li>Images: Wikimedia Commons images of the Grand Mosque of Paris, French National Assembly, French police, Charlie Hebdo demonstration, and France 24 logo; TIME/Reuters protest image for media-analysis purposes. Replace with locally hosted images if required by your instructor or website host.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Prepared for course research project • Edit this file directly in GitHub or VS Code</div>
+  </footer>
+</body>
+</html>
