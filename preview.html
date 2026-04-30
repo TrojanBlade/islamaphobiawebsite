@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laïcité, Security, and the Muslim Question in France</title>
+  <style>
+    /*
+      HOW TO EDIT:
+      1) Text: search for the section title and edit the paragraphs directly.
+      2) Colors: change the CSS variables below.
+      3) Sources: edit the Works Cited section at the bottom.
+      4) Media: replace placeholder boxes with <img>, <iframe>, or audio embeds.
+    */
+    :root{
+      --bg:#081015; --panel:#101b22; --panel2:#132530; --ink:#f4f7f2; --muted:#b9c7bf;
+      --gold:#d6a955; --green:#7bbf91; --red:#e66b5b; --blue:#7fb3d5; --line:rgba(255,255,255,.12);
+      --shadow: 0 18px 60px rgba(0,0,0,.35); --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:radial-gradient(circle at top left,#18313d 0,#081015 36%,#05090d 100%); color:var(--ink); line-height:1.65;}
+    a{color:#aad8ff; text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1180px; margin:0 auto; padding:0 22px}
+    header{position:sticky; top:0; z-index:20; backdrop-filter:blur(18px); background:rgba(8,16,21,.78); border-bottom:1px solid var(--line)}
+    nav{display:flex; justify-content:space-between; align-items:center; gap:20px; min-height:72px}
+    .brand{font-weight:800; letter-spacing:.02em; color:var(--gold)}
+    .links{display:flex; gap:14px; flex-wrap:wrap; font-size:.92rem}.links a{color:var(--muted)}
+    .hero{padding:82px 0 54px; position:relative; overflow:hidden}
+    .hero-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:30px; align-items:stretch}
+    .tag{display:inline-flex; gap:8px; align-items:center; border:1px solid var(--line); color:var(--gold); padding:7px 12px; border-radius:999px; background:rgba(214,169,85,.08); font-size:.85rem; font-weight:700}
+    h1{font-size:clamp(2.4rem,5vw,5.1rem); line-height:1.02; margin:18px 0 18px; letter-spacing:-.055em}
+    h2{font-size:clamp(1.75rem,3vw,2.8rem); line-height:1.1; margin:0 0 18px; letter-spacing:-.035em}
+    h3{font-size:1.24rem; margin:0 0 9px;color:#fff} p{margin:0 0 16px}.lead{font-size:1.22rem; color:#d6e0d9; max-width:780px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.025)); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:24px}
+    .stat-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:18px}.stat{padding:18px; border-radius:18px; background:rgba(255,255,255,.045); border:1px solid var(--line)}
+    .stat b{display:block; font-size:1.7rem; color:var(--gold); line-height:1.1}.stat span{display:block; color:var(--muted); font-size:.9rem; margin-top:6px}
+    section{padding:58px 0; border-top:1px solid var(--line)}
+    .section-head{display:grid; grid-template-columns:.9fr 1.1fr; gap:28px; margin-bottom:24px}.eyebrow{color:var(--green); text-transform:uppercase; letter-spacing:.16em; font-weight:800; font-size:.78rem}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}.grid-2{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
+    .pill{display:inline-block; padding:5px 10px; border-radius:999px; background:rgba(127,179,213,.13); color:#c7e8ff; font-size:.8rem; font-weight:700; margin-bottom:10px}
+    .timeline{position:relative; padding-left:22px}.timeline:before{content:""; position:absolute; left:7px; top:4px; bottom:4px; width:2px; background:linear-gradient(var(--gold),transparent)}
+    .event{position:relative; margin-bottom:20px}.event:before{content:""; position:absolute; left:-21px; top:8px; width:13px; height:13px; border-radius:50%; background:var(--gold); box-shadow:0 0 0 5px rgba(214,169,85,.12)}
+    .quote{font-size:1.35rem; line-height:1.45; color:#fff; border-left:4px solid var(--gold); padding-left:18px; margin:10px 0 0}
+    .matrix{width:100%; border-collapse:collapse; overflow:hidden; border-radius:18px}.matrix th,.matrix td{padding:14px; border-bottom:1px solid var(--line); vertical-align:top}.matrix th{text-align:left; color:var(--gold); background:rgba(214,169,85,.08)}.matrix td{color:#dce6de}
+    .media-box{min-height:180px; border:1px dashed rgba(255,255,255,.28); border-radius:18px; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--muted); padding:20px; background:rgba(255,255,255,.035)}
+    .callout{border:1px solid rgba(214,169,85,.45); background:linear-gradient(135deg,rgba(214,169,85,.12),rgba(123,191,145,.07)); border-radius:var(--radius); padding:26px}
+    .source-list li{margin-bottom:12px}.small{font-size:.9rem; color:var(--muted)}sup a{color:var(--gold); font-weight:800}.badge-red{background:rgba(230,107,91,.15);color:#ffb0a7}.badge-green{background:rgba(123,191,145,.15);color:#b9ffd0}.badge-gold{background:rgba(214,169,85,.15);color:#ffe2a2}
+    footer{padding:40px 0 70px; color:var(--muted)}
+    @media(max-width:850px){.hero-grid,.section-head,.grid-3,.grid-2{grid-template-columns:1fr}.links{display:none}.stat-grid{grid-template-columns:1fr}h1{font-size:2.7rem}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap"><nav><div class="brand">Islamophobia in France</div><div class="links"><a href="#profile">Profile</a><a href="#argument">Argument</a><a href="#law">Law</a><a href="#politics">Politics</a><a href="#media">Media</a><a href="#economy">Economy</a><a href="#security">Security</a><a href="#resistance">Resistance</a><a href="#sources">Sources</a></div></nav></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="tag">France • Laïcité • Security State • Muslim Citizenship</span>
+          <h1>When neutrality becomes a border.</h1>
+          <p class="lead">This project argues that Islamophobia in France does not operate only through private prejudice or far-right speech. It is produced through a republican language of neutrality that turns visible Muslim life—especially the veil, Muslim associations, Islamic schooling, mosque funding, and security discourse—into a recurring test of belonging.</p>
+          <p class="small">Team members: <strong>[Add teammate names here]</strong> · Course: <strong>[Add course name]</strong> · Citation style: Chicago Notes / hyperlinked bibliography</p>
+        </div>
+        <aside class="card">
+          <h3>Core thesis</h3>
+          <p class="quote">In France, Islamophobia works by translating racial and religious suspicion into the language of secularism, public order, and national cohesion.</p>
+          <div class="stat-grid">
+            <div class="stat"><b>68.6M</b><span>Population estimate, 2024/25 range<sup><a href="#fn1">1</a></sup></span></div>
+            <div class="stat"><b>10%</b><span>Muslim share of ages 18–59 in metropolitan France, INSEE survey<sup><a href="#fn2">2</a></sup></span></div>
+            <div class="stat"><b>1905</b><span>Church/state separation law, foundation of modern laïcité</span></div>
+            <div class="stat"><b>2021</b><span>“Separatism” law expanded oversight of associations and religious groups<sup><a href="#fn3">3</a></sup></span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="profile">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Country profile</div><h2>France’s Muslim question is inseparable from empire, migration, and the republic.</h2></div><p>France is a secular republic with a long colonial history in Muslim-majority regions, especially North and West Africa. Today, many French Muslims are citizens whose families trace their roots to Algeria, Morocco, Tunisia, Turkey, sub-Saharan Africa, and France’s overseas territories. Because France generally avoids official religious statistics in its census, population figures are usually based on surveys and estimates rather than a religious census.</p></div>
+        <div class="grid-3">
+          <div class="card"><span class="pill badge-gold">History</span><h3>Empire to migration</h3><p>French rule in Algeria, Tunisia, Morocco, parts of West Africa, and the Levant shaped the migration routes that later produced France’s large Muslim population. Postwar labor recruitment, decolonization, family reunification, and asylum flows all made Islam a domestic French reality rather than a foreign issue.</p></div>
+          <div class="card"><span class="pill badge-green">Religious diversity</span><h3>A secularizing society</h3><p>INSEE found that in 2019–2020, 51% of people aged 18–59 in metropolitan France said they had no religion; 29% identified as Catholic, 10% as Muslim, and 10% as another religion.<sup><a href="#fn2">2</a></sup> Islam is therefore both France’s second-largest religion and a frequent target of public controversy.</p></div>
+          <div class="card"><span class="pill">Political system</span><h3>Laïcité as identity</h3><p>Laïcité is formally about state neutrality toward religion. In practice, debates over Muslim clothing, halal food, mosque funding, and Islamic schools often transform neutrality into a demand that Muslims make religion less visible in public life.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="argument">
+      <div class="wrap">
+        <div class="callout">
+          <div class="eyebrow">Analytical framing</div>
+          <h2>The central pattern: Islamophobia is legalized as “neutrality” and normalized as “security.”</h2>
+          <p>France’s model is not simply “anti-Muslim hatred.” It is a layered system: legal restrictions define certain Muslim practices as incompatible with public neutrality; political rhetoric presents Islam as a threat to national cohesion; media controversies repeatedly reduce Muslims to veils, violence, and integration; and security policies give the state broad power over mosques, schools, associations, and activists.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="law">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Legal restrictions</div><h2>The law targets symbols, but the social target is often Muslim visibility.</h2></div><p>Most French restrictions are written in universal language: “conspicuous religious symbols,” “public order,” “neutrality,” “Republican values.” The effect, however, falls heavily on Muslims because the most contested symbol is usually the hijab, abaya, niqab, or qamis.</p></div>
+        <table class="matrix">
+          <tr><th>Policy / law</th><th>What it does</th><th>Why it matters for Islamophobia analysis</th></tr>
+          <tr><td>2004 public school law</td><td>Bans conspicuous religious symbols in public primary and secondary schools.</td><td>Presented as secular neutrality, but in public debate it was centrally about Muslim girls’ headscarves.</td></tr>
+          <tr><td>2010 face-covering ban</td><td>Prohibits face coverings in public space, including niqab/burqa.</td><td>Moves beyond state institutions into the street, turning certain Muslim women’s dress into a public-order question.</td></tr>
+          <tr><td>2021 “separatism” law</td><td>Expands oversight of religious associations, schools, foreign funding, and organizations receiving public subsidies.</td><td>Frames Muslim civil society as a potential security threat and places Muslim associations under exceptional scrutiny.<sup><a href="#fn3">3</a></sup></td></tr>
+          <tr><td>2023–2024 abaya/qamis school ban</td><td>Education authorities banned abayas and qamis in public schools; the Council of State upheld the policy as legally compatible with laïcité.<sup><a href="#fn4">4</a></sup></td><td>Shows how an item not always defined as strictly religious can become legally coded as Muslim and therefore prohibited.</td></tr>
+          <tr><td>Sports hijab restrictions</td><td>French rules have excluded some hijab-wearing athletes from competitions; Amnesty criticized the bans before the Paris Olympics.<sup><a href="#fn5">5</a></sup></td><td>Extends the “neutrality” demand into women’s bodies and public participation, especially for young Muslim women.</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="politics">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Electoral politics</div><h2>Islamophobia is useful because it lets politicians argue about race without saying race.</h2></div><p>French political rhetoric often turns Islam into a proxy for immigration, security, gender equality, and national decline. This allows politicians to present restrictive policies as defense of secularism or women’s rights while mobilizing voters around anxiety toward Muslims.</p></div>
+        <div class="grid-3">
+          <div class="card"><span class="pill badge-red">Far right</span><h3>Marine Le Pen / National Rally</h3><p>Le Pen’s 2022 campaign included a proposed public-space hijab ban, later softened by allies as the second round approached.<sup><a href="#fn6">6</a></sup> The political function was clear: the veil became a shorthand for national identity, immigration, and cultural threat.</p></div>
+          <div class="card"><span class="pill badge-red">Far right media-politics</span><h3>Éric Zemmour</h3><p>Zemmour’s rhetoric linked Muslims, immigration, and invasion; Reuters reported that France’s top court ordered a retrial in a case involving his anti-Muslim remarks about people wearing traditional religious clothing.<sup><a href="#fn7">7</a></sup></p></div>
+          <div class="card"><span class="pill badge-gold">Mainstream state politics</span><h3>Gabriel Attal / Macron governments</h3><p>The abaya ban was announced by then-Education Minister Gabriel Attal and defended as a secularism measure.<sup><a href="#fn8">8</a></sup> This matters because Islamophobic policy does not only come from the far right; mainstream republican actors also reproduce suspicion toward Muslim visibility.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="media">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Media, film, and images</div><h2>The Muslim is repeatedly made visible as a problem.</h2></div><p>French media controversies often focus on visual symbols: veils, abayas, halal signs, mosques, protests, and images of “banlieue” disorder. The repetition matters: even when coverage is framed as debate, it trains audiences to associate Muslim visibility with national crisis.</p></div>
+        <div class="grid-2">
+          <div class="card"><h3>Visual grammar of Islamophobia</h3><p>Media discussions often turn Muslim women into symbolic battlegrounds. The hijab or abaya becomes less a garment than a screen onto which anxieties about immigration, gender, secularism, and extremism are projected.</p><p><strong>Suggested visual:</strong> a split-screen collage: school, parliament, sports field, and news studio. Add captions showing how the same symbol moves across institutions.</p></div>
+          <div class="media-box">Replace this box with an image, YouTube clip, podcast audio, or news screenshot.<br><br>Example: embed a short France 24 / Reuters / DW clip on the abaya ban, then cite it in Works Cited.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="economy">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Economic restrictions</div><h2>Economic Islamophobia works through exclusion, debanking, and professional pressure.</h2></div><p>The most visible legal debates are about clothing, but the economic consequences are broader: Muslim women face employment barriers; Muslim associations report difficulty with bank access and funding; and security-linked administrative controls can disrupt schools, mosques, publishers, and charities.</p></div>
+        <div class="grid-3">
+          <div class="card"><span class="pill">Employment</span><h3>Hijab and workplace exclusion</h3><p>Anti-discrimination groups have long documented how visible Muslim women face hiring barriers and pressure to remove religious dress. This turns a public debate about secularism into private economic exclusion.</p></div>
+          <div class="card"><span class="pill">Banking</span><h3>Association financing</h3><p>Reports and official dialogue around the Forum de l’Islam de France show that Muslim religious associations have faced problems in relations with banks; in 2025, the Interior Minister promised dialogue on banking access for Muslim associations.<sup><a href="#fn9">9</a></sup></p></div>
+          <div class="card"><span class="pill badge-red">State pressure</span><h3>Funding and closures</h3><p>Reuters reported that France’s campaign against “separatism” affected Muslim schools, including the loss of state funding for Averroès, France’s largest Muslim private school.<sup><a href="#fn10">10</a></sup> Economic pressure therefore becomes a tool of ideological governance.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="security">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Surveillance and emergency powers</div><h2>The security state makes Muslim institutions governable before they are proven guilty.</h2></div><p>After terrorist attacks, France expanded administrative and security powers. Some measures address real threats, but civil liberties groups argue that the architecture of prevention can cast suspicion over Muslim religious life as a whole.</p></div>
+        <div class="timeline">
+          <div class="event card"><h3>2015–2017: emergency logic</h3><p>After major attacks, emergency practices normalized administrative searches, closures, and security measures. The danger is not that security is irrelevant, but that exceptional tools can become ordinary governance.</p></div>
+          <div class="event card"><h3>2020–2021: association dissolutions</h3><p>The French government dissolved the Collective Against Islamophobia in France; Human Rights Watch argued that the Council of State’s approval damaged freedom of association and expression.<sup><a href="#fn11">11</a></sup></p></div>
+          <div class="event card"><h3>2022: mosque closures</h3><p>Reuters reported that French authorities had closed 22 mosques over 18 months, with critics objecting to secretive evidence and limited procedural transparency.<sup><a href="#fn12">12</a></sup></p></div>
+          <div class="event card"><h3>2023–2025: normalization of oversight</h3><p>Human Rights Watch warned that the 2021 separatism framework threatened freedom of association, while later reports noted wider constraints on civil society and rising hate crime indicators.<sup><a href="#fn13">13</a></sup></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resistance">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Countering Islamophobia</div><h2>Resistance comes from legal advocacy, women’s sports campaigns, civil liberties work, and local Muslim organizing.</h2></div><p>Positive examples matter because they keep the project from becoming only a story of victimization. French Muslims and allies have challenged Islamophobia through litigation, documentation, public campaigns, academic reports, and alternative institutions.</p></div>
+        <div class="grid-3">
+          <div class="card"><span class="pill badge-green">Civil society</span><h3>CCIE / successor advocacy</h3><p>After the CCIF dissolution, anti-Islamophobia advocacy continued through European and local networks, including documentation, victim support, and public reporting.</p></div>
+          <div class="card"><span class="pill badge-green">Sports campaigns</span><h3>Basket Pour Toutes</h3><p>Campaigns led by Muslim women athletes challenged hijab restrictions in basketball and other sports, reframing the issue as equal participation rather than “religious separatism.”</p></div>
+          <div class="card"><span class="pill badge-green">Institutional dialogue</span><h3>FORIF / ADDAM</h3><p>The Forum de l’Islam de France and ADDAM were presented by the Interior Ministry as efforts to address Muslim chaplaincy, cemetery needs, bank access, and anti-Muslim acts, though representativeness remains debated.<sup><a href="#fn9">9</a></sup></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="positive">
+      <div class="wrap">
+        <div class="callout"><div class="eyebrow">Positive cases</div><h2>Success does exist—but often despite the system, not because of it.</h2><p>Examples include legal challenges to discriminatory policies, Muslim women’s athletic organizing, public documentation of anti-Muslim acts, interfaith coalitions, and local initiatives that protect mosque security or expand chaplaincy. The strongest positive framing is not “France is simply improving,” but “organized resistance forces the republic to live up to its own promises.”</p></div>
+      </div>
+    </section>
+
+    <section id="sources">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Works cited</div><h2>Research foundation</h2></div><p>Use this bibliography as the base. Add 2–3 course readings or lecture citations here and insert them into the analytical framing section. Replace bracketed placeholders with your professor’s exact assigned texts.</p></div>
+        <ol class="source-list">
+          <li id="fn1">World Bank Data. “France.” Population and economic indicators. <a href="https://data.worldbank.org/country/france" target="_blank">https://data.worldbank.org/country/france</a>.</li>
+          <li id="fn2">INSEE. “Religious Diversity in France: Intergenerational Transmissions and Practices by Origins.” April 2023. <a href="https://www.insee.fr/en/statistiques/7342918?sommaire=7344042" target="_blank">https://www.insee.fr/en/statistiques/7342918</a>.</li>
+          <li id="fn3">U.S. Department of State. “2023 Report on International Religious Freedom: France.” <a href="https://www.state.gov/reports/2023-report-on-international-religious-freedom/france" target="_blank">https://www.state.gov/reports/2023-report-on-international-religious-freedom/france</a>.</li>
+          <li id="fn4">Conseil d’État. “Laïcité: l’interdiction du port de tenues de type abaya à l’école est conforme à la loi.” September 27, 2024. <a href="https://conseil-etat.fr/actualites/laicite-l-interdiction-du-port-de-tenues-de-type-abaya-a-l-ecole-est-conforme-a-la-loi" target="_blank">https://conseil-etat.fr/actualites/...</a>.</li>
+          <li id="fn5">Amnesty International. “France: Hijab Bans in French Sport Expose Discriminatory Hypocrisy.” July 16, 2024. <a href="https://www.amnesty.org/en/latest/news/2024/07/france-hijab-bans-olympic-and-paralympic/" target="_blank">https://www.amnesty.org/en/latest/news/2024/07/france-hijab-bans-olympic-and-paralympic/</a>.</li>
+          <li id="fn6">Reuters. “Faced with criticism, Le Pen allies tone down rhetoric on proposed hijab ban.” April 18, 2022. <a href="https://www.reuters.com/world/europe/faced-with-criticism-le-pen-allies-tone-down-rhetoric-proposed-hijab-ban-2022-04-18/" target="_blank">Reuters link</a>.</li>
+          <li id="fn7">Reuters. “Top French court annuls presidential challenger Zemmour’s hate acquittal.” February 21, 2023. <a href="https://www.reuters.com/world/europe/top-french-court-annuls-presidential-challenger-zemmours-hate-acquittal-2023-02-21/" target="_blank">Reuters link</a>.</li>
+          <li id="fn8">Reuters. “France to ban Muslim abaya dress in state schools.” August 27, 2023. <a href="https://www.reuters.com/world/europe/france-ban-muslim-abaya-dress-state-schools-2023-08-27/" target="_blank">Reuters link</a>.</li>
+          <li id="fn9">Le Monde. “France’s interior minister promises progress for Muslims.” February 19, 2025. <a href="https://www.lemonde.fr/en/france/article/2025/02/19/france-s-interior-minister-promises-progress-for-muslims_6738333_7.html" target="_blank">Le Monde link</a>.</li>
+          <li id="fn10">Reuters. “Muslim schools caught up in France’s fight against Islamism.” June 3, 2024. <a href="https://www.reuters.com/world/europe/muslim-schools-caught-up-frances-fight-against-islamism-2024-06-03/" target="_blank">Reuters link</a>.</li>
+          <li id="fn11">Human Rights Watch. “French Court Confirms Dissolution of Anti-Discrimination Group.” September 27, 2021. <a href="https://www.hrw.org/news/2021/09/27/french-court-confirms-dissolution-anti-discrimination-group" target="_blank">https://www.hrw.org/news/2021/09/27/...</a>.</li>
+          <li id="fn12">Reuters. “French mosque closures based on ‘secretive evidence,’ critics say.” April 5, 2022. <a href="https://www.reuters.com/world/europe/france-closes-mosques-with-powers-that-some-critics-say-use-secretive-evidence-2022-04-05/" target="_blank">Reuters link</a>.</li>
+          <li id="fn13">Human Rights Watch. “World Report 2023: France” and “World Report 2025: France.” <a href="https://www.hrw.org/world-report/2023/country-chapters/france" target="_blank">2023</a>; <a href="https://www.hrw.org/world-report/2025/country-chapters/france" target="_blank">2025</a>.</li>
+          <li>[Course reading placeholder] Add one Islamophobia Studies Journal article assigned in class and connect it to the “neutrality/security” thesis.</li>
+          <li>[Course lecture placeholder] Add lecture date/title on Orientalism, racialization of Muslims, or state secularism.</li>
+          <li>[European Report placeholder] European Islamophobia Report, France chapter. Add the exact year your class prefers.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><p>Built as a research website template. Edit this file directly, then upload it to GitHub Pages, Netlify, Google Sites embed, or any static hosting service.</p></div></footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href'); const el=document.querySelector(id); if(el){e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'});}}));
+  </script>
+</body>
+</html>
